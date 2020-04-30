@@ -1,0 +1,11 @@
+{
+  "name": "Oregon-covid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:drifterz28/Oregon-covid.git",
+  "author": "Chris Whitney <chris@chriswhitney.com>",
+  "license": "GNU",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.3"
+  }
+}
