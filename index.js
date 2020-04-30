@@ -21,15 +21,19 @@ const server = http.createServer((_, response) => {
         const negative = $tableColums.eq(3).text();
         const totalTested = $tableColums.eq(5).text();
         const deaths = $tableColums.eq(7).text();
-        response.writeHead(200, { 'Content-Type': 'application/json'});
-        response.end(JSON.stringify({
-          lastUpdate,
-          positive,
-          negative,
-          totalTested,
-          deaths,
-        }));
-
+        response.writeHead(200, {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        });
+        response.end(
+          JSON.stringify({
+            lastUpdate,
+            positive,
+            negative,
+            totalTested,
+            deaths,
+          })
+        );
       });
     })
     .on("error", (e) => {
