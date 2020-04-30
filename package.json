@@ -5,6 +5,11 @@
   "repository": "git@github.com:drifterz28/Oregon-covid.git",
   "author": "Chris Whitney <chris@chriswhitney.com>",
   "license": "GNU",
+  "scripts": {
+    "run": "node index.js",
+    "dev": "nodemon index.js",
+    "update": "git pull"
+  },
   "dependencies": {
     "cheerio": "1.0.0-rc.3"
   }
