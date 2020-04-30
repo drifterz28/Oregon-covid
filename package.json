@@ -6,7 +6,7 @@
   "author": "Chris Whitney <chris@chriswhitney.com>",
   "license": "GNU",
   "scripts": {
-    "run": "node index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "update": "git pull"
   },
